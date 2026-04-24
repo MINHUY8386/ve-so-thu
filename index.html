@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Central Park Zoo - Zoo & Safari Park Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon">
+            <h1 class="m-3 text-primary">Central Park Zoo</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
+                <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
+                <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Khám phá</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Động vật</a>
+                        <a href="membership.html" class="dropdown-item">Đặt vé ngay</a>
+                        <a href="visiting.html" class="dropdown-item">Thời gian hoạt động</a>
+                        <a href="testimonial.html" class="dropdown-item">Trải Nghiệm du khách</a>
+                        
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+            </div>
+            <a href="" class="btn btn-primary">Mua vé<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark p-0 mb-5">
+        <div class="row g-0 flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
+                <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
+                    <h1 class="display-4 text-light mb-5">Tận hưởng niềm vui bất tận cùng gia đình</h1>
+                    <div class="d-flex align-items-center pt-4 animated slideInDown">
+                        <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">Đọc thêm</a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h6 class="text-white m-0 ms-4 d-none d-sm-block">Xem Video</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    
+                    <h1 class="display-5 mb-4">Vì sao bạn nên ghé thăm <span class="text-primary">Central Park Zoo</span></h1>
+                    <p class="mb-4">Khám phá thế giới động vật hoang dã sống động trong một không gian thiên nhiên rộng lớn và gần gũi. Central Park Zoo mang đến trải nghiệm tham quan an toàn, thú vị và đầy cảm hứng cho mọi lứa tuổi.</p>
+                    <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Trải nghiệm môi trường hoang dã chân thật</h5>
+                    <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Không gian thiên nhiên trong lành</h5>
+                    <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Hướng dẫn viên chuyên nghiệp & an ninh đảm bảo</h5>
+                    <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Gặp gỡ những loài động vật đặc sắc hàng đầu thế giới</h5>
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Đọc thêm</a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="img/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-xxl bg-primary facts my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-paw fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">2853</h1>
+                    <p class="text-white mb-0">Tổng số động vật</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">5000</h1>
+                    <p class="text-white mb-0">Khách tham quan mỗi ngày</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-certificate fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">20000</h1>
+                    <p class="text-white mb-0">Thành viên</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">195</h1>
+                    <p class="text-white mb-0">Loài hoang dã quý hiếm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                   
+                    <h1 class="display-5 mb-0">Dịch vụ nổi bật dành cho du khách <br /><span class="text-primary">Central Park Zoo</span></h1>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-primary h-100 d-flex align-items-center py-4 px-4 px-sm-5">
+                        <i class="fa fa-3x fa-mobile-alt text-white"></i>
+                        <div class="ms-4">
+                            <p class="text-white mb-0">Liên hệ tư vấn</p>
+                            <h2 class="text-white mb-0">+0399810748</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid mb-3" src="img/icon/icon-2.png" alt="Icon">
+                    <h5 class="mb-3">Bãi đỗ xe tiện lợi</h5>
+                    <span>Khu vực đỗ xe rộng rãi, an toàn, thuận tiện cho cả ô tô và xe máy.</span>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid mb-3" src="img/icon/icon-3.png" alt="Icon">
+                    <h5 class="mb-3">Chụp ảnh cùng động vật</h5>
+                    <span>Lưu giữ khoảnh khắc đáng nhớ với những loài động vật thân thiện.</span>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid mb-3" src="img/icon/icon-4.png" alt="Icon">
+                    <h5 class="mb-3">Hướng dẫn viên chuyên nghiệp</h5>
+                    <span>Lưu giữ khoảnh khắc đáng nhớ với những loài động vật thân thiện.</span>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <img class="img-fluid mb-3" src="img/icon/icon-5.png" alt="Icon">
+                    <h5 class="mb-3">Ẩm thực & giải khát</h5>
+                    <span>Đa dạng món ăn và thức uống phục vụ suốt hành trình tham quan.</span>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid mb-3" src="img/icon/icon-6.png" alt="Icon">
+                    <h5 class="mb-3">Cửa hàng lưu niệm</h5>
+                    <span>Mua sắm quà tặng độc đáo mang dấu ấn thiên nhiên hoang dã.</span>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid mb-3" src="img/icon/icon-7.png" alt="Icon">
+                    <h5 class="mb-3">Wi-Fi tốc độ cao miễn phí</h5>
+                    <span>Kết nối internet nhanh chóng, chia sẻ trải nghiệm mọi lúc.</span>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid mb-3" src="img/icon/icon-8.png" alt="Icon">
+                    <h5 class="mb-3">Khu vui chơi trẻ em</h5>
+                    <span>Không gian vui chơi an toàn, phù hợp cho các bé khám phá.</span>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <img class="img-fluid mb-3" src="img/icon/icon-9.png" alt="Icon">
+                    <h5 class="mb-3">Khu nghỉ chân</h5>
+                    <span>Điểm dừng thư giãn thoải mái trong suốt chuyến tham quan.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Animal Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                   
+                    <h1 class="display-5 mb-0">Khám phá thế giới hoang dã đầy kỳ thú tại <br /><span class="text-primary">Central Park Zoo</span> </h1>
+                </div>
+      
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-md-1.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-md-1.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Elephant</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-lg-1.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-lg-1.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Elephant</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-lg-2.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-lg-2.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Elephant</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-md-2.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-md-2.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Elephant</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-md-3.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-md-3.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Elephant</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-lg-3.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Elephant</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Animal End -->
+
+
+    <!-- Visiting Hours Start -->
+    <div class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <h1 class="display-6 text-white mb-5">Thời gian hoạt động</h1>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span>Thứ hai</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Thứ ba</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Thứ tư</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Thứ năm</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Thứ sáu</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Thứ bảy</span>
+                            <span>9:00AM - 6:00PM</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span>Chủ nhật</span>
+                            <span>Đóng cửa</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 text-white mb-5">Thông tin liên hệ</h1>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Văn phòng</td>
+                                <td>Số 938 Quốc lộ 1A, Phường Khánh Hậu, TP. Tân An, Long An</td>
+                            </tr>
+                            <tr>
+                                <td>Sở thú</td>
+                                <td>Central park zoo, Long An, Việt Nam</td>
+                            </tr>
+                            <tr>
+                                <td>Ticket</td>
+                                <td>
+                                    <p class="mb-2">+012 345 6789</p>
+                                    <p class="mb-0">huyln.24th@sv.dla.edu.vn</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Đặt vé</td>
+                                <td>
+                                    <p class="mb-2">+0399810748</p>
+                                    <p class="mb-0">huyln.24th@sv.dla.edu.vn</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Visiting Hours End -->
+
+
+    <!-- Membership Start -->
+    <div class="container-xxl py-5">
+        <div class="container-fluid">
+            <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-12">                   
+                    <h1 class="display-0 mb-10">Khám phá thế giới động vật – Đặt vé ngay hôm nay!<br /> <span class="text-primary">Chỉ có tại Central Park Zoo</span></h1>
+                </div>               
+            </div>
+        </div>
+    </div>
+      <div class="container-xxl py-5">
+          </div>
+    <div class="container">
+        <div class="row g-4" id="ticketsHome">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="membership-item position-relative p-4 border rounded shadow-sm">
+                    <img class="img-fluid rounded mb-4" src="img/01.png" alt="Vé trẻ em">                    
+                    <h4 class="text-dark mb-3">Đối tượng</h4>
+                    <h3 class="text-primary mb-4">49.000 VNĐ</h3>
+                    <p><i class="fa fa-check text-primary me-3"></i>Xem xiếc thú miễn phí</p>
+                    <a class="btn btn-outline-primary px-4 mt-3" href="#">Mua Vé Ngay</a>
+                </div>
+            </div>
+         </div>
+</div>
+    <!-- Membership End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Du khách nói gì về chúng tôi!</h1>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>“Chuyến tham quan tại Central Park Zoo thật sự rất tuyệt vời. Không gian xanh mát, động vật đa dạng và dịch vụ rất chuyên nghiệp. Đây chắc chắn là điểm đến lý tưởng cho gia đình và bạn bè.”</p>
+                        <h5 class="mb-1">Nguyễn Minh Anh</h5>
+                        <span class="fst-italic">Nhân viên văn phòng</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>“Các bé nhà mình cực kỳ thích khu vui chơi và khu tương tác với động vật. Không gian rất an toàn, sạch sẽ và nhiều hoạt động bổ ích. Cả gia đình đã có một ngày thật trọn vẹn tại Central Park Zoo.”</p>
+                        <h5 class="mb-1">Trần Hoàng Nam</h5>
+                        <span class="fst-italic">Kỹ sư</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>“Một nơi lý tưởng để thư giãn cuối tuần. Không gian xanh mát, yên bình và có rất nhiều góc chụp ảnh đẹp. Chúng mình đặc biệt thích khu động vật hoang dã và dịch vụ rất chu đáo.”</p>
+                        <h5 class="mb-1">Lê Mạnh Dũng</h5>
+                        <span class="fst-italic">Nhân viên massage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Địa chỉ</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Đường 13, Tây Ninh, Việt Nam</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+0399810748</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>huyln.24th@sv.dla.edu.vn</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Liên kết nhanh</h5>
+                    <a class="btn btn-link" href="">Giới thiệu</a>
+                    <a class="btn btn-link" href="">Liên hệ</a>
+                    <a class="btn btn-link" href="">Dịch vụ </a>
+                    <a class="btn btn-link" href="">Chính sách và điều khoản</a>
+                    <a class="btn btn-link" href="">Hỗ trợ</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Thông tin hữu ích</h5>
+                    <a class="btn btn-link" href="">Lịch hoạt động</a>
+                    <a class="btn btn-link" href="">Giá vé & ưu đãi</a>
+                    <a class="btn btn-link" href="">Bản đồ tham quan</a>
+                    <a class="btn btn-link" href="">Nội quy tham quan</a>
+                    <a class="btn btn-link" href="">Câu hỏi thường gặp</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Đăng ký nhận tin</h5>
+                    <p>Nhận tin tức mới nhất, sự kiện và ưu đãi hấp dẫn từ Central Park Zoo.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+            <script src="js/main.js"></script>
+    <!-- Template Javascript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+    function renderTicketsHome() {
+        const ticketsList = JSON.parse(localStorage.getItem('tickets')) || [];
+        const container = $("#ticketsHome"); 
+        if (container.length === 0) return;
+        container.empty();
+        if (ticketsList.length === 0) {
+            container.append('<div class="col-12 text-center"><p>Hiện tại chưa có thông tin vé.</p></div>');
+            return;
+        }
+        ticketsList.forEach((item, i) => {
+            const formattedPrice = Number(item.price).toLocaleString('vi-VN');
+            const delay = (i * 0.1).toFixed(1);
+            const imageSrc = item.picture ? "img/" + item.picture : "img/01.png";
+            const ticketHTML = `
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="${delay}s">
+                    <div class="membership-item position-relative p-4 border rounded shadow-sm h-100">
+                        <img class="img-fluid rounded mb-4" src="${imageSrc}" alt="${item.name}" style="filter: brightness(1) !important; opacity: 1 !important;" onerror="this.src='img/01.png'">
+                        <h1 class="display-1 opacity-25">${(i + 1).toString().padStart(2, '0')}</h1>
+                        <h4 class="text-dark mb-3">${item.name}</h4>
+                        <h3 class="text-primary mb-4">${formattedPrice} VNĐ</h3> 
+                        <p><i class="fa text-primary me-20"></i>Đối tượng:</br> ${item.id}</p>
+                        <a class="btn btn-outline-primary px-4 mt-3" href="#">Mua Vé Ngay</a>
+                    </div>
+                </div>`;
+            container.append(ticketHTML);
+        });
+        if (typeof WOW !== 'undefined') {
+            new WOW().init();
+        }
+    }
+    renderTicketsHome();
+});
+</script>
+    <script>
+$(document).ready(function () {
+    // 1. Lấy dữ liệu từ localStorage
+    const newsData = JSON.parse(localStorage.getItem('news')) || [];
+    const carouselContainer = $(".testimonial-carousel");
+
+    // 2. Kiểm tra nếu có dữ liệu mới thì mới thực hiện thay đổi
+    if (newsData.length > 0) {
+        // Hủy Owl Carousel cũ (nếu nó đã lỡ chạy với dữ liệu tĩnh)
+        if (carouselContainer.hasClass('owl-loaded')) {
+            carouselContainer.owlCarousel('destroy');
+        }
+
+        let htmlContent = "";
+
+        // 3. Duyệt qua mảng newsData để tạo HTML
+        newsData.forEach(item => {
+            htmlContent += `
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" 
+                         src="${item.picture || 'img/testimonial-1.jpg'}" 
+                         style="width: 100px; height: 100px;" 
+                         onerror="this.src='img/testimonial-1.jpg'">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>“${item.content}”</p>
+                        <h5 class="mb-1">${item.author}</h5>
+                        <span class="fst-italic">${item.role}</span>
+                    </div>
+                </div>`;
+        });
+
+        // 4. Đổ HTML vào container
+        carouselContainer.html(htmlContent);
+
+        // 5. Khởi tạo lại Owl Carousel để hiệu ứng trượt hoạt động
+        carouselContainer.owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            center: true,
+            dots: false,
+            loop: true,
+            nav : true,
+            navText : [
+                '<i class="bi bi-arrow-left"></i>',
+                '<i class="bi bi-arrow-right"></i>'
+            ],
+            responsive: {
+                0:{ items:1 },
+                768:{ items:2 },
+                992:{ items:3 }
+            }
+        });
+    }
+});
+</script>
+</body>
+</html>
