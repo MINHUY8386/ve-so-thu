@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AdminLTE v4 | Quản lý Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.11.0/styles/overlayscrollbars.min.css" />
+    <link rel="stylesheet" href="dist/css/adminlte.css" />
+</head>
+
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <div class="app-wrapper">
+    <!--begin::Header-->
+    <nav class="app-header navbar navbar-expand bg-body">
+        <!--begin::Container-->
+        <div class="container-fluid">
+            <!--begin::Start Navbar Links-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button">
+                        <i class="bi bi-list"></i>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a href="#" class="nav-link">Trang chủ</a>
+                </li>
+              
+            </ul>
+            <!--end::Start Navbar Links-->
+
+            <!--begin::End Navbar Links-->
+            <ul class="navbar-nav ms-auto">
+                <!--begin::Navbar Search-->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>
+                <!--end::Navbar Search-->
+
+                <!--begin::Messages Dropdown Menu-->
+               
+                <!--end::Notifications Dropdown Menu-->
+
+                <!--begin::Fullscreen Toggle-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-lte-toggle="fullscreen">
+                        <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
+                        <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none"></i>
+                    </a>
+                </li>
+                <!--end::Fullscreen Toggle-->
+
+               
+            </ul>
+            <!--end::End Navbar Links-->
+        </div>
+        <!--end::Container-->
+    </nav>
+    <!--end::Header-->
+    <!--begin::Sidebar-->
+    <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+        <!--begin::Sidebar Brand-->
+        <div class="sidebar-brand">
+            <!--begin::Brand Link-->
+            <a href="./index.html" class="brand-link">
+                <!--begin::Brand Image-->
+                <img
+                    src="dist/assets/img/AdminLTELogo.png"
+                    alt="AdminLTE Logo"
+                    class="brand-image opacity-75 shadow" />
+                <!--end::Brand Image-->
+                <!--begin::Brand Text-->
+                <span class="brand-text fw-light">Central Park Zoo</span>
+                <!--end::Brand Text-->
+            </a>
+            <!--end::Brand Link-->
+        </div>
+        <!--end::Sidebar Brand-->
+        <!--begin::Sidebar Wrapper-->
+        <div class="sidebar-wrapper">
+            <nav class="mt-2">
+                <!--begin::Sidebar Menu-->
+                <ul class="nav sidebar-menu flex-column"
+                    data-lte-toggle="treeview"
+                    role="navigation"
+                    aria-label="Main navigation"
+                    data-accordion="false"
+                    id="navigation">
+
+                    <!-- Trang chủ -->
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="nav-icon bi bi-house"></i>
+                            <p>Tổng quan</p>
+                        </a>
+                    </li>
+
+                    <!-- Vé tham quan -->
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon bi bi-ticket-perforated"></i>
+                            <p>
+                                Vé tham quan
+            <i class="nav-arrow bi bi-chevron-right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="danhsach.html" class="nav-link">
+                                    <i class="nav-icon bi bi-list"></i>
+                                    <p>Danh sách vé</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="tickets.html" class="nav-link">
+                                    <i class="nav-icon bi bi-plus-circle"></i>
+                                    <p>Thêm vé mới</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Khách hàng -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon bi bi-people"></i>
+                            <p>
+                                Khách hàng
+            <i class="nav-arrow bi bi-chevron-right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="customers.html" class="nav-link">
+                                    <i class="nav-icon bi bi-person-lines-fill"></i>
+                                    <p>Danh sách khách</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="history.html" class="nav-link">
+                                    <i class="nav-icon bi bi-clock-history"></i>
+                                    <p>Lịch sử mua vé</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Thống kê -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon bi bi-bar-chart"></i>
+                            <p>
+                                Thống kê
+            <i class="nav-arrow bi bi-chevron-right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="revenue.html" class="nav-link">
+                                    <i class="nav-icon bi bi-currency-dollar"></i>
+                                    <p>Doanh thu</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="visitors.html" class="nav-link">
+                                    <i class="nav-icon bi bi-people-fill"></i>
+                                    <p>Lượt khách</p>
+                                </a>
+                            </li>
+                            <li class="nav-item menu-open">
+                                <a href="news.html" class="nav-link">
+                                    <i class="nav-icon bi bi-ticket"></i>
+                                    <p>Tin tức</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Hệ thống -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon bi bi-gear"></i>
+                            <p>
+                                Hệ thống
+            <i class="nav-arrow bi bi-chevron-right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="roles.html" class="nav-link">
+                                    <i class="nav-icon bi bi-shield-lock"></i>
+                                    <p>Phân quyền</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="members.html" class="nav-link">
+                                    <i class="nav-icon bi bi-person-badge"></i>
+                                    <p>Nhân viên</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+               
+            </nav>
+        </div>
+    </aside>
+   <main class="app-main">
+            <div class="app-content-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3 class="mb-0">Quản lý Tin tức & Đánh giá</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#newsInfo" onclick="prepareAdd()">
+                                        Thêm tin tức
+                                    </button>
+
+                                    <table id="newsList" class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 10px">STT</th>
+                                                <th>Tiêu đề / Người đăng</th>
+                                                <th>Nghề nghiệp / Chức danh</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Tin Tức -->
+    <div class="modal fade" id="newsInfo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thông tin tin tức / Đánh giá</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editIndex" value="-1">
+                    <div class="mb-3 row">
+                        <label for="newsAuthor" class="col-sm-3 col-form-label">Họ tên</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="newsAuthor" placeholder="VD: Nguyễn Minh Anh">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="newsRole" class="col-sm-3 col-form-label">Nghề nghiệp</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="newsRole" placeholder="VD: Nhân viên văn phòng">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="newsPicture" class="col-sm-3 col-form-label">Hình ảnh</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="newsPicture" placeholder="img/testimonial-1.jpg">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="newsContent" class="col-sm-3 col-form-label">Nội dung</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" id="newsContent" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" id="saveNews" class="btn btn-primary">Lưu thay đổi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        let newsList = JSON.parse(localStorage.getItem('news')) || [];
+        let editIndex = -1; 
+        const newsModal = new bootstrap.Modal(document.getElementById('newsInfo'));
+
+        function showNews() {
+            const tbody = $("#newsList tbody");
+            tbody.empty(); 
+            if (newsList.length === 0) {
+                tbody.append('<tr><td colspan="3" class="text-center text-muted">Chưa có tin tức nào.</td></tr>');
+                return;
+            }
+            newsList.forEach((item, i) => {
+                const htmlRow = `
+                    <tr class="align-middle">
+                        <td>${i + 1}</td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span>${item.author}</span>
+                                <div class="action-buttons">
+                                    <button class="btn btn-link text-primary p-0 me-2 btn-edit" data-index="${i}" title="Sửa">
+                                        <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button class="btn btn-link text-danger p-0 btn-delete" data-index="${i}" title="Xóa">
+                                        <i class="bi bi-trash3-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>${item.role}</td>
+                    </tr>`;
+                tbody.append(htmlRow);
+            });
+        }
+
+        $(".btn-primary[data-bs-target='#newsInfo']").on("click", function (e) {
+            editIndex = -1; 
+            $("#newsAuthor, #newsRole, #newsPicture, #newsContent").val("");
+            $(".modal-title").text("Thêm tin tức / Đánh giá mới");
+            $("#saveNews").text("Lưu tin tức");       
+        });
+
+        $("#saveNews").on("click", function () {
+            const author = $("#newsAuthor").val().trim();
+            const role = $("#newsRole").val().trim();
+            const picture = $("#newsPicture").val().trim();
+            const content = $("#newsContent").val().trim();
+
+            if (!author || !content) {
+                alert("Vui lòng nhập tên người đăng và nội dung!");
+                return;
+            }
+
+            const newsData = {
+                author: author,
+                role: role,
+                picture: picture,
+                content: content 
+            };
+
+            if (editIndex === -1) {
+                newsList.push(newsData);
+            } else {
+                newsList[editIndex] = newsData;
+            }
+
+            localStorage.setItem('news', JSON.stringify(newsList));
+            showNews();
+            newsModal.hide();
+            alert("Đã lưu dữ liệu thành công!");
+        });
+
+        $(document).on("click", ".btn-edit", function () {
+            editIndex = $(this).data("index");
+            const item = newsList[editIndex];
+            $("#newsAuthor").val(item.author);
+            $("#newsRole").val(item.role);
+            $("#newsPicture").val(item.picture);
+            $("#newsContent").val(item.content);
+            $(".modal-title").text("Chỉnh sửa tin tức");
+            $("#saveNews").text("Cập nhật");
+            newsModal.show();
+        });
+
+        $(document).on("click", ".btn-delete", function () {
+            const index = $(this).data("index");
+            if (confirm(`Bạn có chắc muốn xóa tin tức của "${newsList[index].author}" không?`)) {
+                newsList.splice(index, 1); 
+                localStorage.setItem('news', JSON.stringify(newsList));
+                showNews();
+            }
+        });
+
+        showNews();
+    });
+    </script>
+</body>
+</html>
